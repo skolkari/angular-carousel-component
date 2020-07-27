@@ -1,0 +1,43 @@
+.carousel {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    flex: 0 0 100%;
+  }
+
+  .carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-inner {
+    display: flex;
+    overflow: unset;
+    position: unset;
+  }
+
+  .carousel-pin-container {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-pin {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .carousel-pin.active {
+    background-color: black;
+  }
+}

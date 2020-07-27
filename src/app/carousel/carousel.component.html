@@ -1,0 +1,14 @@
+<div class="carousel">
+  <section class="carousel-wrapper" [ngStyle]="carouselWrapperStyle">
+    <ul class="carousel-inner" #carousel>
+      <li *ngFor="let item of items; let i = index" class="carousel-item">
+        <ng-container [ngTemplateOutlet]="item.tpl"></ng-container>
+      </li>
+    </ul>
+    <div class="carousel-pin-container">
+      <div *ngFor="let item of items; let i = index">
+        <div class="carousel-pin" (click)="slideTo(i)" [ngClass]="{ active: currentSlide === i }"></div>
+      </div>
+    </div>
+  </section>
+</div>

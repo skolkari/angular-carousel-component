@@ -3,13 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { CarouselModule } from './carousel/carousel.module';
 
-import { CarouselComponent, CarouselItemElement } from './carousel.component';
-import { CarouselItemDirective } from './carousel-item.directive';
 
 @NgModule({
-  imports:      [ BrowserModule, BrowserAnimationsModule ],
-  declarations: [ AppComponent, CarouselComponent, CarouselItemDirective, CarouselItemElement ],
+  imports:      [ BrowserModule, BrowserAnimationsModule, CarouselModule ],
+  declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
